@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         Button requestBtn = (Button) findViewById(R.id.requestBtn);
         requestBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String urlStr = input01.getText().toString();
+                String seach = input01.getText().toString();
+                String urlStr = "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query="+seach;
 
                 ConnectThread thread = new ConnectThread(urlStr);
                 thread.start();
@@ -87,3 +88,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+//https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=검색어 전체
+//https://search.naver.com/search.naver?where=post&sm=tab_jum&query=검색어 블로그

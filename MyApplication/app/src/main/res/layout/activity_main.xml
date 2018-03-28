@@ -14,8 +14,8 @@
             android:id="@+id/input01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="사이트 주소 입력 ..."
-            android:text="http://m.daum.net"
+            android:hint="검색어 입력"
+            android:text=""
             android:textSize="20dp"
             >
         </EditText>
@@ -23,7 +23,7 @@
             android:id="@+id/requestBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HTTP 요청"
+            android:text="검색"
             android:textSize="20dp"
             android:textStyle="bold"
             >
